@@ -9,13 +9,13 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            int[,] grid = new int[,]{
-                {0,0,0,0},
-                {1,1,0,0},
-                {0,1,1,1}
+            List<Tuple<int, int>> pos = new List<Tuple<int, int>>(){
+                Tuple.Create(0,0),
+                Tuple.Create(1,1),
+                Tuple.Create(1, 0)
             };
 
-            var ret = SmallestRectangleEnclosingBlackPixel.AreaOfSmallestRect(grid, 1, 0);
+            var ret = NumberOfIslandsII.NumOfIslands(3, 3, pos);
         }
     }
 }
